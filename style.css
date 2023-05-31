@@ -1,0 +1,132 @@
+body {
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.header {
+    background-color: #292929;
+    height: 136px;
+    font-size: 1.7rem;
+}
+.header__logo {
+
+}
+.header__logo img {
+   width: 150px;
+}
+.header__navbar-list {
+
+}
+.header__navbar-item {
+    padding: 10px 0;
+    position: relative;
+
+}
+.header__navbar-item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 22px;
+    top: 31px;
+    background-color: transparent;
+    z-index: 1;
+    left: -30px;
+}
+.header__navbar-link {
+    text-decoration: none;
+    color: var(--white-color);
+    transition: ease-in-out 0.25s;
+    cursor: pointer;
+}
+.header__navbar-link:hover 
+{
+    color: var(--primary-color);
+}
+
+.header__navbar-item i {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    position: absolute;
+    top: 15px;
+    margin-left: 5px;
+ 
+}
+.header__navbar-item,
+.header__navbar-subnav {
+    color: var(--white-color);
+    list-style: none;
+}
+.header__navbar-item:hover .header__navbar-subnav {
+    display: block;
+}
+
+.header__navbar-subnav {
+    position: absolute;
+    background-color: var(--white-color);
+    min-width: 160px;
+    top: 50px;
+    left: -30px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 6px 4px rgba(0,0,0,0.1);
+    padding-left: 0;
+    overflow: hidden;
+    display:none;
+    font-size: 1.5rem;
+   
+
+}
+
+.header__navbar-subnav-item {
+    padding: 10px 5px;
+    transition: ease-in 0.25s;
+}
+.header__navbar-subnav-item:hover {
+    background-color: var(--background-color);
+}
+.header__navbar-subnav-link {
+    text-decoration: none;
+    color: var(--black-color);
+
+}
+.header__search {
+
+}
+.header__search-box {
+      
+        outline: none;
+        border: none;
+        border-radius: 100px;
+        padding: 2px 2px;
+        width: 40px;
+        transition: width 0.3s ease;
+        text-align: center;
+        font-size: 1.4rem;
+}
+
+
+
+
+
+.header__search  {
+    position: relative;
+}
+.search__btn {
+    width: 40px;
+    padding: 2px 2px;
+    cursor: pointer;
+    border-radius: 107px;
+    border: none;
+    display: inline;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 7px;
+    transition: transform 0.3s ease;
+}
+
+.header__search.active .header__search-box {
+    width: 200px;
+}
+.header__search.active .search__btn {
+    transform: translateX(210px);
+}
