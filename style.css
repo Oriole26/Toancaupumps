@@ -71,8 +71,6 @@ body {
     overflow: hidden;
     display:none;
     font-size: 1rem;
-    
-
 }
 
 .header__navbar-subnav-item {
@@ -138,9 +136,7 @@ body {
 .header__logo img {
    width: 150px;
 }
-.header__navbar-list {
 
-}
 .header__navbar-item {
     padding: 10px 0;
     position: relative;
@@ -214,15 +210,14 @@ body {
 
 }
 .header__search-box {
-      
-        outline: none;
-        border: none;
-        border-radius: 100px;
-        padding: 2px 2px;
-        width: 32px;
-        transition: width 0.3s ease;
-        text-align: center;
-        font-size: 1.4rem;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    padding: 2px 2px;
+    width: 32px;
+    transition: width 0.3s ease;
+    text-align: center;
+    font-size: 1.4rem;
 }
 
 .header__search  {
