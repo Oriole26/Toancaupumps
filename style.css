@@ -6,7 +6,7 @@ body {
 .header {
     background-color: #292929;
     height: 136px;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 .header__logo {
 
@@ -44,12 +44,12 @@ body {
 }
 
 .header__navbar-item i {
-    font-size: 1.6rem;
     color: var(--white-color);
     position: absolute;
     top: 15px;
     margin-left: 5px;
- 
+    font-size: 1rem;
+    vertical-align: middle;
 }
 .header__navbar-item,
 .header__navbar-subnav {
@@ -65,15 +65,13 @@ body {
     background-color: var(--white-color);
     min-width: 160px;
     top: 50px;
-    left: -30px;
     border-radius: 2px;
     box-shadow: 2px 2px 6px 4px rgba(0,0,0,0.1);
     padding-left: 0;
     overflow: hidden;
     display:none;
-    font-size: 1.5rem;
-   
-
+    font-size: 1rem;
+    
 }
 
 .header__navbar-subnav-item {
@@ -88,28 +86,23 @@ body {
     color: var(--black-color);
 
 }
-.header__search {
-
-}
-.header__search-box {
-      
-        outline: none;
-        border: none;
-        border-radius: 100px;
-        padding: 2px 2px;
-        width: 40px;
-        transition: width 0.3s ease;
-        text-align: center;
-        font-size: 1.4rem;
-}
-
-
-
-
 
 .header__search  {
     position: relative;
 }
+
+.header__search-box {
+    visibility: hidden;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    padding: 2px 2px;
+    width: 40px;
+    transition: width 0.3s ease, visibility 0.25s ease;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
 .search__btn {
     width: 40px;
     padding: 2px 2px;
@@ -125,6 +118,7 @@ body {
 }
 
 .header__search.active .header__search-box {
+    visibility: visible;
     width: 200px;
 }
 .header__search.active .search__btn {
