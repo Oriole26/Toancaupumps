@@ -6,7 +6,6 @@ body {
 .header {
     background-color: #292929;
     height: 136px;
-    font-size: 1.3rem;
 }
 .header__logo {
 
@@ -37,6 +36,8 @@ body {
     color: var(--white-color);
     transition: ease-in-out 0.25s;
     cursor: pointer;
+    font-size: 1.2rem;
+
 }
 .header__navbar-link:hover 
 {
@@ -46,8 +47,8 @@ body {
 .header__navbar-item i {
     color: var(--white-color);
     position: absolute;
-    top: 15px;
-    margin-left: 5px;
+    top: 18px;
+    margin-left: 10px;
     font-size: 1rem;
     vertical-align: middle;
 }
@@ -71,6 +72,7 @@ body {
     overflow: hidden;
     display:none;
     font-size: 1rem;
+    z-index: 1;
 }
 
 .header__navbar-subnav-item {
@@ -99,7 +101,7 @@ body {
     width: 40px;
     transition: width 0.3s ease, visibility 0.25s ease;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .search__btn {
@@ -111,7 +113,6 @@ body {
     display: inline;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     position: absolute;
-    top: 0;
     left: 7px;
     transition: transform 0.3s ease;
 }
@@ -122,128 +123,11 @@ body {
 }
 .header__search.active .search__btn {
     transform: translateX(210px);
-}body {
-    height: 100vh;
-    background-color: var(--background-color);
-}
-
-.header {
-    background-color: #292929;
-    height: 90px;
-    font-size: 1.7rem;
-    border-bottom: 3px solid var(--white-color);
-}
-.header__logo img {
-   width: 150px;
-}
-
-.header__navbar-item {
-    padding: 10px 0;
-    position: relative;
-
-}
-.header__navbar-item:nth-child(2)::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 22px;
-    top: 31px;
-    background-color: transparent;
-    z-index: 1;
-    left: -30px;
-}
-.header__navbar-link {
-    text-decoration: none;
-    color: var(--white-color);
-    transition: ease-in-out 0.25s;
-    cursor: pointer;
-}
-.header__navbar-link:hover 
-{
-    color: var(--primary-color);
-}
-
-.header__navbar-item i {
-    font-size: 1.6rem;
-    color: var(--white-color);
-    position: absolute;
-    top: 15px;
-    margin-left: 5px;
- 
-}
-.header__navbar-item,
-.header__navbar-subnav {
-    color: var(--white-color);
-    list-style: none;
-}
-.header__navbar-item:hover .header__navbar-subnav {
-    display: block;
-}
-
-.header__navbar-subnav {
-    position: absolute;
-    background-color: var(--white-color);
-    min-width: 160px;
-    top: 50px;
-    left: -30px;
-    border-radius: 2px;
-    box-shadow: 2px 2px 6px 4px rgba(0,0,0,0.1);
-    padding-left: 0;
-    overflow: hidden;
-    display:none;
-    font-size: 1.5rem;
-    z-index: 1;
    
-
-}
-
-.header__navbar-subnav-item {
-    padding: 10px 5px;
-    transition: ease-in 0.25s;
-}
-.header__navbar-subnav-item:hover {
-    background-color: var(--background-color);
-}
-.header__navbar-subnav-link {
-    text-decoration: none;
-    color: var(--black-color);
-
-}
-.header__search-box {
-    outline: none;
-    border: none;
-    border-radius: 100px;
-    padding: 2px 2px;
-    width: 32px;
-    transition: width 0.3s ease;
-    text-align: center;
-    font-size: 1.4rem;
-}
-
-.header__search  {
-    position: relative;
-}
-.search__btn {
-    width: 33px;
-    padding: 2px 2px;
-    cursor: pointer;
-    border-radius: 107px;
-    border: none;
-    display: inline;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 0;
-    left: 7px;
-    transition: transform 0.3s ease;
 }
 .search__btn i {
-    font-size: 1.5rem;
-}
-.header__search.active .header__search-box {
-    width: 200px;
-}
-.header__search.active .search__btn {
-    transform: translateX(210px);
+    font-size: 1rem;
+    vertical-align: middle;
 }
 /*Slider*/
 
@@ -265,10 +149,9 @@ body {
 }
 .slider__heading {
     position: absolute;
-    top:  calc(100% - 460px);
-    left: 60%;
+    top:  calc(100% - 470px);
+    left: 55%;
     color: var(--white-color);
-    max-width: 400px;
 }
 .slider__heading h3,
 .slider__heading p {
@@ -278,8 +161,10 @@ body {
     margin-bottom: 24px;
 }
 .slider__heading p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: justify;
+    max-width: 600px;
+    color: var(--background-color);
 }
 .slider__principle {
     top: 75%;
@@ -293,11 +178,10 @@ body {
 }
 .slider__principle-item {
     text-align: center;
-    border-right: 1px solid #292929;
 
 }
 .slider__principle-icon {
-    font-size: 2.8rem;
+    font-size: 2.0rem;
     color: var(--primary-color);
     
 
@@ -305,4 +189,5 @@ body {
 .slider__principle-text  {
     margin-top: 24px;
     font-size: 1.6rem;
+   
 }
