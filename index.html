@@ -5,26 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./grid.css">
     <link rel="stylesheet" href="./base.css">
     <link rel="stylesheet" href="./style.css">
     <title>Toan Cau Pumps</title>
 </head>
 
 <body>
-   <div class="wrap container-fluid">
-        <div class="header row align-items-center">
-            <div class="header__logo col-2 gx-5">
+   <div class="wrap grid">
+        <div class="header row">
+            <div class="header__logo l-2">
                 <img src="./assets/img/logo.png" alt="">
             </div>
-            <div class="header__navbar col-7">
-                <ul class="header__navbar-list row">
-                    <li class="header__navbar-item col"><a href="" class="header__navbar-link">Home</a></li>
-                    <li class="header__navbar-item col">
+            <div class="header__navbar l-7">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item"><a href="" class="header__navbar-link">Home</a></li>
+                    <li class="header__navbar-item">
                         <a href="" class="header__navbar-link">Products<i class="fa-solid fa-chevron-down"></i></a>
                         <ul class="header__navbar-subnav">
                             <li class="header__navbar-subnav-item"><a href="" class="header__navbar-subnav-link">Pumps
@@ -35,59 +34,87 @@
                                     Valve</a></li>
                         </ul>
                     </li>
-                    <li class="header__navbar-item col"><a href="" class="header__navbar-link">Projects</a></li>
-                    <li class="header__navbar-item col"><a href="" class="header__navbar-link">News</a></li>
-                    <li class="header__navbar-item col"><a href="" class="header__navbar-link">About us</a></li>
-                    <li class="header__navbar-item col"><a href="" class="header__navbar-link">Contact</a></li>
+                    <li class="header__navbar-item"><a href="" class="header__navbar-link">Projects</a></li>
+                    <li class="header__navbar-item"><a href="" class="header__navbar-link">News</a></li>
+                    <li class="header__navbar-item"><a href="" class="header__navbar-link">About us</a></li>
+                    <li class="header__navbar-item"><a href="" class="header__navbar-link">Contact</a></li>
                 </ul>
             </div>
-            <div class="header__search col-3">
+            <div class="header__search l-3">
                 <input type="type" class="header__search-box" placeholder="Search here...">
                 <button class="search__btn">
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
         </div>
-    </div>
+    
         <div class="content">
             <div class="slider">
-                <div class="slider__img position-relative">
-                    <img class="object-fit-cover" src="./assets/img/bg_main1.jpg" alt="">
+                <div class="slider__img">
+                    <img src="./assets/img/bg_main1.jpg" alt="">
                 </div>
-                <div class="slider__heading position-absolute">
-                    <h3 class="text-uppercase fs-2 fw-bold">Toan Cau Pumps</h3>
-                    <p class="fw-medium">Toan Cau Pumps Trading & Engineering Co., Ltd brings to the clients the best pleasure 
+                <div class="slider__heading">
+                    <h3>Toan Cau Pumps</h3>
+                    <p>Toan Cau Pumps Trading & Engineering Co., Ltd brings to the clients the best pleasure 
                         with high quality products assembled in the right schedule and the reasonable price.
                         With the principle “Prestige - Quality - Competitive price – Distinctive after-sales service”, 
                         we would like to accompany with all partners for an everlasting development
                     </p>
                 </div>
-                <div class="slider__principle row position-absolute start-50 translate-middle-x ">
+                <div class="slider__principle">
                     
-                    <div class="slider__principle-item col-3">
+                    <div class="slider__principle-item ">
                         <i class="fa-solid fa-thumbs-up slider__principle-icon"></i>
                         <p class="slider__principle-text">Prestige</p>
                     </div>
-                    <div class="slider__principle-item col-3">
+                    <div class="slider__principle-item">
                         <i class="fa-solid fa-medal slider__principle-icon"></i>
                         <p class="slider__principle-text">Quality</p>
                     </div>
-                    <div class="slider__principle-item col-3">
+                    <div class="slider__principle-item">
                         <i class="fa-solid fa-money-bill-trend-up slider__principle-icon"></i>
                         <p class="slider__principle-text">Competitive price</p>
                     </div>
-                    <div class="slider__principle-item col-3">
+                    <div class="slider__principle-item">
                         <i class="fa-solid fa-phone-volume slider__principle-icon"></i>
                         <p class="slider__principle-text flex-wrap">Distinctive after-sales service</p>
                     </div>
                 </div>
             </div>
+            <div class="home__products">
+                <p class="home__product-title">Products</p>
+                <h3 class= "home__product-text">OUR PRODUCTS</h3>
+           
+                <div class="home__product-list row">
+                
+                    <div class="home__product-item col-4">
+                        <img class="home__product-img" src="./assets/img/product1.jpeg" alt="">
+                        <span class="home__product-name"><a href="">e-NSC Cast Iron End Suction Pumps vvvvvvvvdddddddđ</a> </span>
+                    </div>
+                    <div class="home__product-item col-4">
+                        <img class="home__product-img" src="./assets/img/product2.jpg" alt="">
+                        <p class="home__product-name"><a href="">e-NSC Cast Iron End Suction Pumps</a></p>
+                    </div>
+                    <div class="home__product-item col-4">
+                        <img class="home__product-img" src="./assets/img/product1.jpeg" alt="">
+                        <p class="home__product-name"><a href="">e-NSC Cast Iron End Suction Pumps</a></p>
+                    </div>
+                </div>
+                <div class="home__product-control prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="home__product-control next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="home__product-more">
+                    <p>View all products</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
         </div>
         <div class="footer"></div>
+    </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
     <script src="./app.js"></script>
 </body>
 
